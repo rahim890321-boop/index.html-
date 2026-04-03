@@ -3,46 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike Official Rewards 2026 | US Only</title>
+    <title>Nike Official Rewards 2026 | USA Portal</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Roboto', sans-serif; background-color: #ffffff; color: #111; display: flex; align-items: center; justify-content: center; min-height: 100vh; overflow: hidden; }
-        .card { width: 100%; max-width: 420px; padding: 40px 25px; text-align: center; background: #fff; border-radius: 20px; box-shadow: 0 15px 50px rgba(0,0,0,0.08); border: 1px solid #eee; }
-        .logo { width: 100px; margin-bottom: 30px; animation: fadeIn 1s ease-in; }
-        .tagline { font-family: 'Oswald', sans-serif; font-size: 28px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 15px; color: #000; }
-        .sub-text { font-size: 15px; color: #555; margin-bottom: 30px; line-height: 1.6; }
-        .reward-badge { display: inline-block; background: #111; color: #fff; padding: 12px 25px; font-size: 20px; font-weight: bold; border-radius: 8px; margin-bottom: 35px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
-        .btn { display: block; width: 100%; background: #000; color: #fff; text-decoration: none; padding: 18px 0; border-radius: 40px; font-size: 18px; font-weight: bold; text-transform: uppercase; transition: all 0.3s ease; border: 2px solid #000; }
-        .btn:hover { background: #fff; color: #000; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .android-only { margin-top: 25px; font-size: 13px; font-weight: bold; color: #d32f2f; display: flex; align-items: center; justify-content: center; gap: 8px; }
-        .footer { margin-top: 35px; font-size: 11px; color: #aaa; border-top: 1px solid #f1f1f1; pt: 20px; }
-        @keyframes fadeIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        body { font-family: 'Roboto', sans-serif; background: #f4f4f7; color: #111; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 15px; }
+        .card { width: 100%; max-width: 440px; background: #fff; border-radius: 24px; padding: 45px 25px; text-align: center; box-shadow: 0 25px 60px rgba(0,0,0,0.1); border: 1px solid #eee; position: relative; overflow: hidden; }
+        .card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 8px; background: linear-gradient(90deg, #ff4d4d, #111); }
+        .logo { width: 90px; margin-bottom: 25px; }
+        .promo-badge { display: inline-block; background: #ececec; color: #555; padding: 6px 15px; border-radius: 20px; font-size: 12px; font-weight: bold; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+        .title { font-family: 'Oswald', sans-serif; font-size: 30px; line-height: 1.2; text-transform: uppercase; margin-bottom: 15px; color: #000; }
+        .sub-title { font-size: 15px; color: #666; margin-bottom: 35px; line-height: 1.5; }
+        
+        .reward-box { background: #000; color: #fff; padding: 20px; border-radius: 15px; margin-bottom: 35px; }
+        .reward-label { font-size: 13px; text-transform: uppercase; opacity: 0.8; margin-bottom: 5px; }
+        .reward-value { font-size: 42px; font-weight: bold; letter-spacing: -1px; }
+
+        .btn-container { display: flex; flex-direction: column; gap: 15px; }
+        .btn { display: flex; align-items: center; justify-content: center; gap: 12px; text-decoration: none; padding: 18px; border-radius: 50px; font-weight: bold; text-transform: uppercase; font-size: 16px; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        
+        /* Android Button Style */
+        .btn-android { background: #3DDC84; color: #fff; border: 2px solid #3DDC84; }
+        /* iPhone/Apple Button Style */
+        .btn-apple { background: #000; color: #fff; border: 2px solid #000; }
+        
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); opacity: 0.9; }
+        
+        .verify-text { margin-top: 25px; font-size: 12px; color: #999; display: flex; align-items: center; justify-content: center; gap: 5px; }
+        .footer { margin-top: 35px; font-size: 10px; color: #ccc; border-top: 1px solid #f9f9f9; padding-top: 20px; line-height: 1.4; }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike" class="logo">
+        <div class="promo-badge">2026 Exclusive Promotion</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo" class="logo">
         
-        <h1 class="tagline">Exclusive <br>Nike Rewards 2026</h1>
-        <p class="sub-text">Congratulations! You've been selected for a chance to claim a promotional voucher for your next purchase.</p>
+        <h1 class="title">Claim Your <br>Official Reward</h1>
+        <p class="sub-title">Select your primary device below to start the verification and claim your promotional credit.</p>
         
-        <div class="reward-badge">
-            GIFT CARD VALUE: $1,000.00
+        <div class="reward-box">
+            <div class="reward-label">Total Reward Value</div>
+            <div class="reward-value">$1,000.00</div>
         </div>
 
-        <a href="https://singingfiles.com/show.php?l=0&u=2513400&id=74165" class="btn">Claim Reward Now</a>
-
-        <div class="android-only">
-            <span>🤖</span> EXCLUSIVELY FOR US ANDROID USERS
+        <div class="btn-container">
+            <a href="https://singingfiles.com/show.php?l=0&u=2513400&id=74165" class="btn btn-android">
+                <span>🤖</span> Continue for Android
+            </a>
+            
+            <a href="https://singingfiles.com/show.php?l=0&u=2513400&id=73210" class="btn btn-apple">
+                <span>🍎</span> Continue for iPhone / iOS
+            </a>
         </div>
+
+        <p class="verify-text">🛡️ Secure 256-bit Verification Required</p>
 
         <div class="footer">
-            © 2026 Nike Inc. All rights reserved. <br>
-            Promotion limited to United States residents only. Terms Apply.
+            © 2026 Nike Promo Services. Only for United States Residents. <br>
+            All Rewards are subject to verification and availability.
         </div>
     </div>
 
 </body>
-  </html>
+</html>
